@@ -205,7 +205,7 @@ hutaf/
 
 I was unable to upload the weight files for the models due to their large size. Instead, I have uploaded them in full to a Drive link for downloading and running the website.
 
-## Drive Link : https://drive.google.com/drive/folders/1kEjPjb_lbVDCMP_HNFLuLmFaJCqvX4_o?usp=share_link
+- Drive Link : https://drive.google.com/drive/folders/1kEjPjb_lbVDCMP_HNFLuLmFaJCqvX4_o?usp=share_link
 ---
 
 ## 📜 License

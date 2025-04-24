@@ -36,7 +36,7 @@ const FeatureCardsSection = () => {
     },
     {
       id: "virtual-fan",
-      title: "Virtual Fan",
+      title: "AI Coach",
       image: "/images/virtual-fan.jpg", // Replace with actual image path
       description:
         "Experience matches from anywhere as if you were there with our immersive fan experience technology.",
@@ -64,19 +64,19 @@ const FeatureCardsSection = () => {
         </svg>
       ),
     },
-{
-  id: "Guess-the-winner",
-  title: "Guess The Winner",
-  image: "/images/guess-the-winner.jpg", // Replace with actual image path
-  link: "/guess-the-winner",
-  description:
-    "Predict the winner of live football matches and stand a chance to win exciting prizes! Compete with other fans and show off your football instincts.",
-  keyFeatures: [
-    "Live match prediction",
-    "Win prizes for correct guesses",
-    "Leaderboard of top predictors",
-    "Interactive football fan experience",
-  ],
+    {
+      id: "ai-chat",
+      title: "Match Analysis AI",
+      image: "/images/ai-chat.jpg", // Replace with actual image path
+      link: "/ai-chat",
+      description:
+        "Get instant AI-powered insights about the match. Ask any question and receive detailed analysis about team performance, tactics, and key moments.",
+      keyFeatures: [
+        "Real-time match analysis",
+        "AI-powered insights",
+        "Interactive Q&A",
+        "Detailed performance metrics",
+      ],
       color: "from-purple-400 to-indigo-500",
       icon: (
         <svg
@@ -89,7 +89,7 @@ const FeatureCardsSection = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
           />
         </svg>
       ),

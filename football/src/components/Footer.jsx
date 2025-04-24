@@ -131,52 +131,6 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Quick Links Column */}
-          <motion.div
-            variants={itemVariants}
-            className="lg:col-span-2 lg:col-start-6"
-          >
-            <div className="relative">
-              <h4 className="text-lg font-semibold mb-5 inline-block">
-                Quick Links
-                <motion.div
-                  className="absolute -bottom-1 left-0 h-0.5 bg-blue-500/70 w-1/2"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "50%" }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.3, duration: 0.4 }}
-                />
-              </h4>
-            </div>
-            <ul className="space-y-3">
-              {["Home", "Features", "About", "Contact"].map((link, index) => (
-                <motion.li
-                  key={index}
-                  variants={linkHoverVariants}
-                  initial="initial"
-                  whileHover="hover"
-                  className="transform transition-transform"
-                >
-                  <a
-                    href={link === "Features" ? "#features" : "#"}
-                    className="text-gray-400 hover:text-blue-400 transition-colors flex items-center"
-                  >
-                    <motion.span
-                      className="mr-2 text-blue-500/0"
-                      variants={{
-                        initial: { opacity: 0, x: -5 },
-                        hover: { opacity: 1, x: 0 },
-                      }}
-                    >
-                      →
-                    </motion.span>
-                    {link}
-                  </a>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-
           {/* Features Column */}
           <motion.div variants={itemVariants} className="lg:col-span-2">
             <div className="relative">
@@ -191,37 +145,34 @@ const Footer = () => {
                 />
               </h4>
             </div>
-            <ul className="space-y-3">
-              {[
-                "Virtual Referee",
-                "Virtual Fan",
-                "Guess The Winner",
-                "Analytics & Games",
-              ].map((feature, index) => (
-                <motion.li
-                  key={index}
-                  variants={linkHoverVariants}
-                  initial="initial"
-                  whileHover="hover"
-                  className="transform transition-transform"
-                >
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-blue-400 transition-colors flex items-center"
+            <ul className="space-y-3 mt-4">
+              {["Virtual Referee", "AI Coach", "AI Chat", "Analysis"].map(
+                (feature, index) => (
+                  <motion.li
+                    key={index}
+                    variants={linkHoverVariants}
+                    initial="initial"
+                    whileHover="hover"
+                    className="transform transition-transform"
                   >
-                    <motion.span
-                      className="mr-2 text-blue-500/0"
-                      variants={{
-                        initial: { opacity: 0, x: -5 },
-                        hover: { opacity: 1, x: 0 },
-                      }}
+                    <a
+                      href="#"
+                      className="text-gray-400 hover:text-blue-400 transition-colors flex items-center"
                     >
-                      →
-                    </motion.span>
-                    {feature}
-                  </a>
-                </motion.li>
-              ))}
+                      <motion.span
+                        className="mr-2 text-blue-500/0"
+                        variants={{
+                          initial: { opacity: 0, x: -5 },
+                          hover: { opacity: 1, x: 0 },
+                        }}
+                      >
+                        →
+                      </motion.span>
+                      {feature}
+                    </a>
+                  </motion.li>
+                )
+              )}
             </ul>
           </motion.div>
 
@@ -239,7 +190,7 @@ const Footer = () => {
                 />
               </h4>
             </div>
-            <ul className="space-y-4 text-gray-400">
+            <ul className="space-y-4 mt-4 text-gray-400">
               <motion.li
                 variants={linkHoverVariants}
                 initial="initial"
@@ -374,20 +325,6 @@ const Footer = () => {
             <p className="text-gray-500 text-sm">
               © {new Date().getFullYear()} Hutaf. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              {["Privacy Policy", "Terms of Service", "Cookies"].map(
-                (item, i) => (
-                  <motion.a
-                    key={i}
-                    href="#"
-                    className="text-sm text-gray-500 hover:text-blue-400 transition-colors"
-                    whileHover={{ color: "#3B82F6" }}
-                  >
-                    {item}
-                  </motion.a>
-                )
-              )}
-            </div>
           </div>
         </motion.div>
       </div>

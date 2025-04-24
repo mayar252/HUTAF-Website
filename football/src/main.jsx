@@ -7,7 +7,7 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import VirtualReferee from "./pages/features/VirtualReferee";
 import VirtualFan from "./pages/features/VirtualFan";
-import GhostSeats from "./pages/features/GhostSeats";
+import AIChat from "./pages/features/AIChat";
 import Analysis from "./pages/features/Analysis";
 import NotFound from "./pages/NotFound";
 import "@fontsource/inter/400.css";
@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="virtual-referee" element={<VirtualReferee />} />
           <Route path="virtual-fan" element={<VirtualFan />} />
-          <Route path="guess-the-winner" element={<GhostSeats />} />
+          <Route path="ai-chat" element={<AIChat />} />
           <Route path="analysis" element={<Analysis />} />
           <Route path="*" element={<NotFound />} />
         </Route>

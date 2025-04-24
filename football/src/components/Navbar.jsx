@@ -77,8 +77,8 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Virtual Referee", path: "/virtual-referee" },
-    { name: "Virtual Fan", path: "/virtual-fan" },
-    { name: "Guess Winner", path: "/guess-the-winner" },
+    { name: "AI Coach", path: "/virtual-fan" },
+    { name: "AI Chat", path: "/ai-chat" },
     { name: "Analysis", path: "/analysis" },
   ];
 

@@ -45,11 +45,12 @@ This tool is aimed at sports analysts, broadcasters, referees, and fans who want
 - Flags events like tripping, sliding, handball, or aggressive behavior.
 - Sends alerts during the match with a confidence score.
 
-### 🤔 3. **AI Chat **
+### 🤔 3. AI Chat 
 - Chat and get all match answers
-- fast response 
+- Fast response
+- ask anything you want with our chatbot all your questioned will answer
 
-###  4. **AI Coach **
+###  4. AI Coach
 - Formations Recommendations
 - Tactical Analysis
 - Starteagy

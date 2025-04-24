@@ -1,0 +1,156 @@
+/* Basic container */
+.ai-chat-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated background elements */
+.animated-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.animated-sphere {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  animation-duration: 25s;
+}
+
+.sphere-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.5) 0%,
+    rgba(59, 130, 246, 0.15) 70%
+  );
+  top: -180px;
+  right: -180px;
+  animation: float1 25s infinite ease-in-out;
+}
+
+.sphere-2 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(
+    circle,
+    rgba(168, 85, 247, 0.5) 0%,
+    rgba(139, 92, 246, 0.15) 70%
+  );
+  bottom: -120px;
+  left: -120px;
+  animation: float2 20s infinite ease-in-out;
+}
+
+.sphere-3 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle,
+    rgba(249, 115, 22, 0.4) 0%,
+    rgba(217, 70, 239, 0.15) 70%
+  );
+  top: 40%;
+  left: 60%;
+  animation: float3 15s infinite ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes float1 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(50px, 50px) rotate(5deg);
+  }
+  50% {
+    transform: translate(25px, 100px) rotate(10deg);
+  }
+  75% {
+    transform: translate(75px, 25px) rotate(5deg);
+  }
+}
+
+@keyframes float2 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-30px, 50px) rotate(-5deg);
+  }
+  50% {
+    transform: translate(-60px, 20px) rotate(-10deg);
+  }
+  75% {
+    transform: translate(-30px, 70px) rotate(-5deg);
+  }
+}
+
+@keyframes float3 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(-50px, -30px) rotate(-8deg);
+  }
+  66% {
+    transform: translate(30px, -60px) rotate(8deg);
+  }
+}
+
+/* Chat interface */
+.chat-interface {
+  background: rgba(15, 23, 42, 0.75);
+  border-radius: 30px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), 0 0 20px rgba(56, 189, 248, 0.15);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.chat-interface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  z-index: -1;
+}
+
+/* Star animation for background */
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 4s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}

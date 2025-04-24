@@ -45,12 +45,29 @@ This tool is aimed at sports analysts, broadcasters, referees, and fans who want
 - Flags events like tripping, sliding, handball, or aggressive behavior.
 - Sends alerts during the match with a confidence score.
 
-### 🤔 3. **Guess the Winner (User Interaction Page)**
-- Lets users guess the match winner during or before the game.
-- Aggregates votes and displays live results.
-- Can be used to measure fan sentiment in real-time.
+### 🤔 3. **AI Chat **
+- Chat and get all match answers
+- fast response 
+
+###  4. **AI Coach **
+- Formations Recommendations
+- Tactical Analysis
+- Starteagy
 
 ---
+
+### New Functionalities
+●	Virtual Fan Chat: Users can interact with a virtual assistant to ask questions about football tactics, player development, and match analysis.
+
+●	Formation Analysis: The application provides detailed analysis of different football formations, including strengths, weaknesses, and best use cases.
+
+●	Tactical Recommendations: Users receive AI-generated tactical recommendations based on match details, including opponent, venue, and team form.
+
+●	Interactive UI: The application features an interactive and animated user interface, enhancing user engagement.
+
+●	Player Development Tools: Offers insights and tools for player skill assessment, training programs, and progress tracking.
+
+
 
 ## 🛠️ Tech Stack
 
@@ -99,6 +116,12 @@ This tool is aimed at sports analysts, broadcasters, referees, and fans who want
   - Referee
 - **Custom CNN/RNN**: Foul detection based on player interactions and frame sequences.
 - **Object Tracking**: Using SORT/DeepSORT for consistent ID assignment across frames.
+- **OpenCV**: For image processing, video stream handling, and drawing bounding boxes.
+- **TensorFlow & PyTorch**: Used for training and refining custom models and fine-tuning pretrained YOLO models.
+- **Socket.IO / WebSockets**: Used for real-time communication between the frontend and backend to stream predictions and analysis updates.
+- **LLM Integration (Gemini)**: Large Language Models are integrated using Gemini to enable natural language interaction and advanced NLP for match understanding in the AI Chat and AI Coach sections.
+
+
 
 ---
 
@@ -127,10 +150,14 @@ This tool is aimed at sports analysts, broadcasters, referees, and fans who want
 - Alert history
 - Accuracy and confidence score
 
-### `/guess-winner`
-- Form to guess winner
-- Live results graph
-- Fan sentiment stats
+### `/AI Chat`
+- AI Chat response
+
+
+### `/AI Coach`
+- Formations
+- Tactic
+- Strateagy
 
 ---
 
@@ -204,7 +231,7 @@ hutaf/
 ## 🚨 Important Notice:
 
 I was unable to upload the weight files for the models due to their large size. Instead, I have uploaded them in full to a Drive link for downloading and running the website.
-
+**Updated**
 - Drive Link : https://drive.google.com/drive/folders/1kEjPjb_lbVDCMP_HNFLuLmFaJCqvX4_o?usp=share_link
 ---
 
